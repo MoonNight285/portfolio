@@ -2,6 +2,7 @@ import Header from "./header/Header";
 import Introduction from "./body/Introduction";
 import "./App.css";
 import AboutMe from "./body/AboutMe";
+import Skill from "./body/Skill";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header/>
         <Introduction />
         <AboutMe />
+        <Skill />
     </div>
   );
 }

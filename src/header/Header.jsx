@@ -4,8 +4,8 @@ import "./Header.css";
 
 function Header() {
     return (
-        <div className={"container-fluid"}>
-            <Navbar bg="light" expand="lg">
+        <div id={"header-navbar-wrapper"} className={"container-fluid"}>
+            <Navbar id={"header-navbar"} expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">KJY portfolio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

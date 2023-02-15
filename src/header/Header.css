@@ -1,3 +1,24 @@
 #basic-navbar-nav a:hover {
     color: red;
 }
+
+#basic-navbar-nav {
+    flex-grow: unset;
+}
+
+#header-navbar-wrapper {
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+}
+
+#header-navbar-wrapper #header-navbar {
+    background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 960px) {
+    /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+    #hide-navbar-nav {
+        display: none;
+    }
+}
