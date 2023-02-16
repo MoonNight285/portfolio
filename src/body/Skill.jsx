@@ -3,7 +3,7 @@ import SkillContents from "./SkillContents";
 
 function Skill() {
     return (
-        <div className={"container mb-5"}>
+        <div className={"container"}>
             <div className={"row"}>
                 <div className={"col"}>
                     <SkillContents titleName={"Frontend"} />
