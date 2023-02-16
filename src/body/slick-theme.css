@@ -34,12 +34,12 @@
 
 .slick-prev {
     background: url("./slickImages/arrow-left.png") no-repeat;
-    opacity: .4;
+    opacity: .2;
 }
 
 .slick-next {
     background: url("./slickImages/arrow-right.png") no-repeat;
-    opacity: .4;
+    opacity: .2;
 }
 
 .slick-next:hover,
@@ -98,6 +98,33 @@
 {
     right: 0;
     left: 0px;
+}
+
+@media screen and (max-width: 426px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .slick-prev
+    {
+        left: 30px;
+        width: 48px;
+        height: 48px;
+        background: url("./slickImages/arrow-left-48.png") no-repeat;
+    }
+    .slick-next
+    {
+        right: 20px;
+        width: 48px;
+        height: 48px;
+        background: url("./slickImages/arrow-right-48.png") no-repeat;
+    }
+    .slick-next:hover,
+    .slick-next:focus {
+        background: url("./slickImages/arrow-right-hover-48.png");
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus {
+        background: url("./slickImages/arrow-left-hover-48.png");
+    }
 }
 
 /* Dots */
