@@ -3,4 +3,41 @@
     height: 300px;
     border: 1px solid lightgrey;
     margin-bottom: 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.h5-skill-title {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+    width: 200px;
+}
+
+.div-skill-logo-wrapper {
+    width: 150px;
+    height: 150px;
+}
+
+.img-skill-logo {
+    width: auto;
+    height: 150px;
+    margin: auto;
+}
+
+.div-slider-wrapper {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.div-skill-no-slick {
+    display: flex;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.div-skill-no-slick div {
+    margin: auto;
 }
