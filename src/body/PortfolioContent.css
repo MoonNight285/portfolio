@@ -1,20 +1,38 @@
 #div-portfolio-box {
-    border: 1px solid lightgrey;
     width: 1000px;
     height: 600px;
     margin-top: 60px;
     margin-bottom: 100px;
 }
 
+#div-portfolio-box img {
+    border: 1px solid lightgrey;
+    height: 550px;
+    margin-top: 15px;
+}
+
 #h3-portfolio-name {
+    text-align: center;
+}
+
+.div-portfolio-img-explanation {
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
 @media screen and (max-width: 960px) {
     /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
     #div-portfolio-box {
-        height: 400px;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 45px;
+    }
+
+    #div-portfolio-box img {
+        width: 100%;
+        height: auto;
     }
 }
