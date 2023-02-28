@@ -21,6 +21,16 @@
     align-items: center;
 }
 
+.p-intro-title-header {
+    font-family: PureunJeonnam;
+    font-size: 30px;
+}
+
+.p-intro-title {
+    font-family: PureunJeonnam;
+    font-size: 20px;
+}
+
 @media screen and (max-width: 524px) {
     #div-intro #div-intro-contents {
         width: 100%;

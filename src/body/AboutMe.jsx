@@ -1,5 +1,6 @@
 import React from "react";
-import "./AboutMe.css"
+import "./AboutMe.css";
+import "../font/fontStyle.css";
 
 function AboutMe() {
     return (
@@ -22,7 +23,7 @@ function AboutMe() {
                         </div>
                         <div className={"div-about-me-profile-summary"}>
                             <img src={"/images/phone.png"} />
-                            <p>010-7189-0933</p>
+                            <p>010 - 7189 - 0933</p>
                         </div>
                         <div className={"div-about-me-profile-summary"}>
                             <img src={"/images/email.png"} />

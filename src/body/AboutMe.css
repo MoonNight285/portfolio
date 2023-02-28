@@ -11,6 +11,8 @@
     height: 700px;
     border: 1px solid lightgrey;
     background-color: white;
+    font-family: NanumGothic;
+    font-size: 17px;
 }
 
 .div-about-me-profile-summary {
@@ -18,6 +20,8 @@
     align-items: center;
     margin-left: 20px;
     margin-bottom: 15px;
+    font-family: NanumGothic;
+    font-size: 17px;
 }
 
 .div-about-me-profile-summary p {
@@ -35,7 +39,8 @@
     margin-left: 20px;
     padding-bottom: 5px;
     border-bottom: 1px solid lightgrey;
-    width: 125px;
+    width: 90%;
+    font-family: NanumGothic;
 }
 
 #div-about-me-contents li {

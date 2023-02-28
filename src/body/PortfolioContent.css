@@ -13,14 +13,24 @@
 
 #h3-portfolio-name {
     text-align: center;
+    font-family: PureunJeonnam;
+    font-size: 32px;
 }
 
 .div-portfolio-img-explanation {
-    height: 30px;
+    height: 40px;
     width: 100%;
     background-color: black;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PureunJeonnam;
+    font-size: 20px;
+}
+
+.div-portfolio-img-explanation p {
+    margin: 0px;
 }
 
 @media screen and (max-width: 960px) {
@@ -34,5 +44,53 @@
     #div-portfolio-box img {
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .div-portfolio-img-explanation p {
+        width: 700px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .div-portfolio-img-explanation p {
+        width: 380px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .div-portfolio-img-explanation p {
+        width: 330px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .div-portfolio-img-explanation p {
+        width: 275px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 18px;
     }
 }

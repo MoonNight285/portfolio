@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./SkillContents.css";
 import "./slick-theme.css";
 import "./slick.css";
+import "../font/fontStyle.css";
 
 function SkillContents({titleName, imgFolderPath, imgList}) {
     const [imgUrl, setImgUrl] = useState([]);
