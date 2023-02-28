@@ -79,9 +79,12 @@ function App() {
         <Introduction />
         <AboutMe />
         <Skill />
-        <PortfolioContent portfolioName={"드림컴"} imgList={dreamcomImgList} imgContentList={dreamcomImgContents} />
-        <PortfolioContent portfolioName={"스프링 시네마"} imgList={cinemaImgList} imgContentList={cinemaImgContents} />
-        <PortfolioContent portfolioName={"코로나 모니터"} imgList={covid19ImgList} imgContentList={covid19ImgContents} />
+        <PortfolioContent portfolioEngName={"dream-com"} portfolioName={"드림컴"} imgList={dreamcomImgList}
+            imgContentList={dreamcomImgContents} />
+        <PortfolioContent portfolioEngName={"spring-cinema"} portfolioName={"스프링 시네마"} imgList={cinemaImgList}
+            imgContentList={cinemaImgContents} />
+        <PortfolioContent portfolioEngName={"covid19-monitor"} portfolioName={"코로나 모니터"} imgList={covid19ImgList}
+            imgContentList={covid19ImgContents} />
         <Footer />
     </div>
   );

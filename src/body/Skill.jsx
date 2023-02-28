@@ -9,7 +9,7 @@ const collaborationImgList = ["git.png", "SourceTree.png", "notion.png"];
 
 function Skill() {
     return (
-        <div className={"container"}>
+        <div id={"div-skill-wrapper"} className={"container"}>
             <div className={"row"}>
                 <div className={"col"}>
                     <SkillContents titleName={"Frontend"} imgFolderPath={"front"} imgList={frontImgList} />

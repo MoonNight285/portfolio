@@ -3,11 +3,11 @@ import "./PortfolioContent.css";
 import {Carousel} from "react-bootstrap";
 import "../font/fontStyle.css";
 
-function PortfolioContent({portfolioName, imgList, imgContentList}) {
+function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentList}) {
     const [viewImgExplanationNumber, setViewImgExplanationNumber] = useState(0); // 이미지에 맞춰 표시할 이미지 내용
 
     return (
-        <div className={"container"}>
+        <div id={`div-portfolio-${portfolioEngName}`} className={"container"}>
             <div className={"row"}>
                 <div className={"col d-flex justify-content-center"}>
                     <div id={"div-portfolio-box"} title={imgContentList[viewImgExplanationNumber]}>
