@@ -17,7 +17,7 @@ function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentL
                                 imgList.map(item => {
                                     return (
                                         <Carousel.Item key={item}>
-                                            <img className="d-block w-100" src={item}
+                                            <img className="d-block" src={item}
                                                  alt={imgContentList[viewImgExplanationNumber]}/>
                                         </Carousel.Item>
                                     );

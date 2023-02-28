@@ -70,3 +70,38 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 425px) {
+    #div-about-me-contents {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #div-about-me-contents {
+        height: 775px;
+    }
+
+    #div-about-me-header {
+        padding-right: 10px;
+    }
+
+    #div-about-me-contents {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #div-about-me-contents {
+        height: 800px;
+    }
+
+    #div-about-me-header {
+        padding-right: 15px;
+        height: 425px;
+    }
+
+    #div-about-me-contents {
+        padding-right: 15px;
+    }
+}

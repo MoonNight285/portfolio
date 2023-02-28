@@ -78,6 +78,48 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    #div-intro-contents {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #div-intro-contents div {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .p-intro-title-header {
+        font-family: PureunJeonnam;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .p-intro-title {
+        font-family: PureunJeonnam;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #div-intro-contents div {
+        padding: 15px;
+    }
+
+    .p-intro-title-header {
+        font-family: PureunJeonnam;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .p-intro-title {
+        font-family: PureunJeonnam;
+        font-size: 17px;
+    }
+}
+
 @keyframes slideIn {
     from {
         margin-bottom:100px;
