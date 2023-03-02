@@ -24,6 +24,20 @@ const covid19ImgContents = [
     "현재 내 계정 상태 확인 및 관리자 신청 대기목록을 볼수있습니다."
 ]
 
+const covid19Information = {
+    developObject : "코로나를 주제로 선정해 코로나의 각종 현황 상황을 알수있게 공공데이터 " +
+        "포털사이트를 이용하여 제작한 사이트입니다.",
+    developTime : "2022.11.26.~2022.12.06",
+    developMemberCount : 1,
+    github : "https://github.com/MoonNight285/Covid19Monitor",
+    roles : [
+        {key : 0, role : "공공데이터 포털 API 적용"},
+        {key : 1, role : "공지사항 & 관리자 페이지 개발"},
+        {key : 2, role : "로그인 & 회원가입 구현"},
+        {key : 3, role : "DB 설계"}
+    ]
+}
+
 const cinemaImgList = [
     "/images/cinema/cinema_1.png",
     "/images/cinema/cinema_2.png",
@@ -45,6 +59,24 @@ const cinemaImgContents = [
     "좌석 선택페이지입니다.",
     "결제페이지입니다."
 ]
+
+
+const cinemaInformation = {
+    developObject : "Spring boot와 Thymeleaf를 메인으로 " +
+        "CGV, 롯데시네마 같은 영화관 같은 사이트를 만들어보고자 하여 제작된 사이트입니다.",
+    developTime : "2022.12.07.~2022.12.27",
+    developMemberCount : 3,
+    github : "https://github.com/SpringCinema/SpringCinemaProject",
+    roles : [
+        {key : 0, role : "스케줄러 사용해 특정시간에 영화 데이터 DB에 저장"},
+        {key : 1, role : "마이페이지 UI 및 기능 구현"},
+        {key : 2, role : "결제 페이지 UI 및 기능 구현"},
+        {key : 3, role : "로그인 & 회원가입 구현"},
+        {key : 4, role : "KMDB(한국 영화 데이터 베이스) API 적용"},
+        {key : 5, role : "XML 데이터 파싱"},
+        {key : 6, role : "DB 설계"}
+    ]
+}
 
 const dreamcomImgList = [
     "/images/dreamcom/dreamcom_1.png",
@@ -72,6 +104,22 @@ const dreamcomImgContents = [
     "이메일과 비밀번호찾기 페이지입니다."
 ]
 
+const dreamcomInformation = {
+    developObject : "React와 Spring boot를 메인으로 웹 사이트의 정석인 쇼핑몰을 만들어보고자 하여 제작된 사이트입니다.",
+    developTime : "2023.01.13.~2023.02.13",
+    developMemberCount : 4,
+    github : "https://github.com/dreamcommall/dream_com",
+    roles : [
+        {key : 0, role : "히스토리 박스 UI 및 기능 구현"},
+        {key : 1, role : "메인화면 페이지 UI 및 기능 구현"},
+        {key : 2, role : "검색 페이지 UI 및 기능 구현"},
+        {key : 3, role : "제품 상세페이지 UI 및 기능 구현"},
+        {key : 4, role : "마이페이지 구매내역 코드 리팩터링 및 기능 구현"},
+        {key : 5, role : "로그인 기능 구현"},
+        {key : 6, role : "DB 설계"}
+    ]
+}
+
 function App() {
   return (
     <div id={"div-main-app"}>
@@ -80,11 +128,11 @@ function App() {
         <AboutMe />
         <Skill />
         <PortfolioContent portfolioEngName={"dream-com"} portfolioName={"드림컴"} imgList={dreamcomImgList}
-            imgContentList={dreamcomImgContents} />
+            imgContentList={dreamcomImgContents} information={dreamcomInformation} />
         <PortfolioContent portfolioEngName={"spring-cinema"} portfolioName={"스프링 시네마"} imgList={cinemaImgList}
-            imgContentList={cinemaImgContents} />
+            imgContentList={cinemaImgContents} information={cinemaInformation} />
         <PortfolioContent portfolioEngName={"covid19-monitor"} portfolioName={"코로나 모니터"} imgList={covid19ImgList}
-            imgContentList={covid19ImgContents} />
+            imgContentList={covid19ImgContents} information={covid19Information} />
         <Footer />
     </div>
   );

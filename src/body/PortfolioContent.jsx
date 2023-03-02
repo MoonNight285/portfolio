@@ -3,7 +3,7 @@ import "./PortfolioContent.css";
 import {Carousel} from "react-bootstrap";
 import "../font/fontStyle.css";
 
-function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentList}) {
+function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentList, information}) {
     const [viewImgExplanationNumber, setViewImgExplanationNumber] = useState(0); // 이미지에 맞춰 표시할 이미지 내용
 
     return (
@@ -17,16 +17,13 @@ function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentL
                 <div className={"col-12 col-lg-6 div-portfolio-content-information"}>
                     <div>
                         <h5>개발 취지</h5>
-                        <p>
-                            React와 Spring boot를 메인으로
-                            웹 사이트의 정석인 쇼핑몰을 만들어보고자 하여 제작된 사이트입니다.
-                        </p>
+                        <p>{information.developObject}</p>
                         <h5>개발 기간</h5>
-                        <p>2023.01.13.~2023.02.13</p>
+                        <p>{information.developTime}</p>
                         <h5>개발 인원</h5>
-                        <p>4명</p>
+                        <p>{information.developMemberCount}명</p>
                         <h5>깃허브</h5>
-                        <a href={"https://github.com/dreamcommall/dream_com"} target={"_blank"}>
+                        <a href={information.github} target={"_blank"}>
                             깃허브 주소로 이동하기
                         </a>
                     </div>
@@ -34,13 +31,11 @@ function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentL
                 <div className={"col-12 col-lg-6 div-portfolio-role-list"}>
                     <h5>담당역할</h5>
                     <ul className={"ul-portfolio-role"}>
-                        <li>히스토리 박스 UI 및 기능 구현</li>
-                        <li>메인화면 페이지 UI 및 기능 구현</li>
-                        <li>검색 페이지 UI 및 기능 구현</li>
-                        <li>제품 상세페이지 UI 및 기능 구현</li>
-                        <li>마이페이지 구매내역 코드 리팩터링 및 기능 구현</li>
-                        <li>로그인 기능 구현</li>
-                        <li>DB 설계</li>
+                        {
+                            information.roles.map(item => {
+                                return <li key={item.key}>{item.role}</li>
+                            })
+                        }
                     </ul>
                 </div>
             </div>
