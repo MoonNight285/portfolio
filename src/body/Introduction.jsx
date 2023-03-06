@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Introduction.css";
 import "../font/fontStyle.css"
+import Homepage from "../context/Homepage";
 
 function Introduction() {
+    const homepage = useContext(Homepage);
+
     return (
         <div id={"div-intro"} className={"container-fluid"}>
             <div className={"row"}>
                 <div id={"div-intro-img-wrapper"} className={"col-sm-12 col-lg-4 col-xl-5"}>
-                    <img width={200} height={200} src={"/images/profile.jpg"} />
+                    <img width={200} height={200} src={`${homepage}/images/profile.jpg`} />
                 </div>
                 <div id={"div-intro-contents-wrapper"} className={"col-sm-12 col-lg-8 col-xl-7"}>
                     <div id={"div-intro-contents"}>

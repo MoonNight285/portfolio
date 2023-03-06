@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./AboutMe.css";
 import "../font/fontStyle.css";
+import Homepage from "../context/Homepage";
 
 function AboutMe() {
+    const homepage = useContext(Homepage);
+
     return (
         <div className={"container mb-5"}>
             <div className={"row"}>
@@ -10,23 +13,23 @@ function AboutMe() {
                     <div id={"div-about-me-header"}>
                         <h5 className={"h5-about-me-menu-title"}>나의 소개</h5>
                         <div className={"div-about-me-profile-summary"}>
-                            <img src={"/images/programmer.png"} />
+                            <img src={`${homepage}/images/programmer.png`} />
                             <p>김준영(만 26세)</p>
                         </div>
                         <div className={"div-about-me-profile-summary"}>
-                            <img src={"/images/graduation-hat.png"} />
+                            <img src={`${homepage}/images/graduation-hat.png`} />
                             <p>한국 폴리텍대학 창원 캠퍼스 메카트로닉스과 졸업</p>
                         </div>
                         <div className={"div-about-me-profile-summary"}>
-                            <img src={"/images/home.png"} />
+                            <img src={`${homepage}/images/home.png`} />
                             <p>경상남도 창원시 거주</p>
                         </div>
                         <div className={"div-about-me-profile-summary"}>
-                            <img src={"/images/phone.png"} />
+                            <img src={`${homepage}/images/phone.png`} />
                             <p>010 - 7189 - 0933</p>
                         </div>
                         <div className={"div-about-me-profile-summary"}>
-                            <img src={"/images/email.png"} />
+                            <img src={`${homepage}/images/email.png`} />
                             <p>kimjyjh123@gmail.com</p>
                         </div>
                     </div>

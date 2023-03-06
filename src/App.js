@@ -5,6 +5,7 @@ import AboutMe from "./body/AboutMe";
 import Skill from "./body/Skill";
 import PortfolioContent from "./body/PortfolioContent";
 import Footer from "./footer/Footer";
+import Homepage from "./context/Homepage";
 
 const covid19ImgList = [
     "/images/covid19/covid19_1.png",
@@ -123,17 +124,19 @@ const dreamcomInformation = {
 function App() {
   return (
     <div id={"div-main-app"}>
-        <Header/>
-        <Introduction />
-        <AboutMe />
-        <Skill />
-        <PortfolioContent portfolioEngName={"dream-com"} portfolioName={"드림컴"} imgList={dreamcomImgList}
-            imgContentList={dreamcomImgContents} information={dreamcomInformation} />
-        <PortfolioContent portfolioEngName={"spring-cinema"} portfolioName={"스프링 시네마"} imgList={cinemaImgList}
-            imgContentList={cinemaImgContents} information={cinemaInformation} />
-        <PortfolioContent portfolioEngName={"covid19-monitor"} portfolioName={"코로나 모니터"} imgList={covid19ImgList}
-            imgContentList={covid19ImgContents} information={covid19Information} />
-        <Footer />
+        <Homepage.Provider value={"https://moonnight285.github.io/portfolio/"}>
+            <Header/>
+            <Introduction />
+            <AboutMe />
+            <Skill />
+            <PortfolioContent portfolioEngName={"dream-com"} portfolioName={"드림컴"} imgList={dreamcomImgList}
+                              imgContentList={dreamcomImgContents} information={dreamcomInformation} />
+            <PortfolioContent portfolioEngName={"spring-cinema"} portfolioName={"스프링 시네마"} imgList={cinemaImgList}
+                              imgContentList={cinemaImgContents} information={cinemaInformation} />
+            <PortfolioContent portfolioEngName={"covid19-monitor"} portfolioName={"코로나 모니터"} imgList={covid19ImgList}
+                              imgContentList={covid19ImgContents} information={covid19Information} />
+            <Footer />
+        </Homepage.Provider>
     </div>
   );
 }

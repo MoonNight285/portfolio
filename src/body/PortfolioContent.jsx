@@ -1,9 +1,11 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import "./PortfolioContent.css";
 import {Carousel} from "react-bootstrap";
 import "../font/fontStyle.css";
+import Homepage from "../context/Homepage";
 
 function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentList, information}) {
+    const homepage = useContext(Homepage);
     const [viewImgExplanationNumber, setViewImgExplanationNumber] = useState(0); // 이미지에 맞춰 표시할 이미지 내용
 
     return (
@@ -48,7 +50,7 @@ function PortfolioContent({portfolioEngName, portfolioName, imgList, imgContentL
                                 imgList.map(item => {
                                     return (
                                         <Carousel.Item key={item}>
-                                            <img className="d-block" src={item}
+                                            <img className="d-block" src={homepage + item}
                                                  alt={imgContentList[viewImgExplanationNumber]}/>
                                         </Carousel.Item>
                                     );

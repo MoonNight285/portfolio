@@ -1,11 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Slider from "react-slick";
 import "./SkillContents.css";
 import "./slick-theme.css";
 import "./slick.css";
 import "../font/fontStyle.css";
+import Homepage from "../context/Homepage";
 
 function SkillContents({titleName, imgFolderPath, imgList}) {
+    const homepage = useContext(Homepage);
     const [imgUrl, setImgUrl] = useState([]);
     const [sildeShowCount, setSildeShowCount] = useState(4);
     const [width, setWidth] = useState(0);
@@ -40,7 +42,7 @@ function SkillContents({titleName, imgFolderPath, imgList}) {
         for (let i = 0; i < imgList.length; ++i) {
             tempUrl.push({
                 key : i,
-                url : `/images/${imgFolderPath}/${imgList[i]}`
+                url : `${homepage}/images/${imgFolderPath}/${imgList[i]}`
             });
         }
         setImgUrl(tempUrl);
