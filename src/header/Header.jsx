@@ -8,7 +8,7 @@ function Header() {
         <div id={"header-navbar-wrapper"} className={"container-fluid"}>
             <Navbar id={"header-navbar"} expand="lg">
                 <Container>
-                    <Navbar.Brand href="#div-intro">KJY portfolio</Navbar.Brand>
+                    <Navbar.Brand href="#div-intro">KJY Portfolio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
